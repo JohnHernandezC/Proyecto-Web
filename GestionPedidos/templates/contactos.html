@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>contactos</title>
+    
+</head>
+<body>
+    
+    <form action='/contactos/' method="POST"> {%csrf_token %} <!--csrf_token sive para evitar ataqeus a la web por inicio de session-->
+        <!--esto se debe conctar a la vista en este caso contacto-->
+    <p>asunto: <input type="text" name="asunto"></p>
+    <p>asunto: <input type="text" name="email"></p>
+    <p>Mensaje: <textarea name="mensaje"rows="15" cols="45"> </textarea></p>
+    <input type="submit" value="Enviar" />
+</form>
+    
+</body>
+</html>
